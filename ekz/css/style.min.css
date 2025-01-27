@@ -1,0 +1,580 @@
+/* Стандартный шаблон настроек для создания сайта */
+body{
+	/* Все что выйдет за рамки боди скроется */
+	overflow-x: hidden;
+	font-family: 'Open Sans',sans-serif;
+	display: block;
+	margin: 0;
+	padding: 0;
+	min-width: 320px;
+	
+}
+/* Подключение шрифтов */
+@font-face {
+	font-family: "Montserrat";
+	src: url("fonts/Montserrat-Medium.ttf") format("ttf"),
+	url("fonts/Montserrat-Medium.ttf") format("ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "CormorantInfant";
+	src: url("fonts/CormorantInfant-SemiBold.ttf") format("ttf"),
+	url("fonts/CormorantInfant-SemiBold.ttf") format("ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "CormorantInfantLignt";
+	src: url("fonts/CormorantInfant-Light.ttf") format("ttf"),
+	url("fonts/CormorantInfant-Light.ttf") format("ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "CormorantInfantMediumItali";
+	src: url("fonts/CormorantInfant-MediumItalic.ttf") format("ttf"),
+	url("fonts/CormorantInfant-MediumItalic.ttf") format("ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "CormorantInfant-SemiBoldItalic";
+	src: url("fonts/CormorantInfant-SemiBoldItalic.ttf") format("ttf"),
+	url("fonts/CormorantInfant-SemiBoldItalic.ttf") format("ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "CormorantInfant-Medium";
+	src: url("fonts/CormorantInfant-Medium.ttf") format("ttf"),
+	url("fonts/CormorantInfant-Medium.ttf") format("ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+/* Контейнер для удерживания блоков по центру */
+.container{
+	max-width: 1590px;
+	padding: 0;
+	margin: 0 auto;
+	overflow:hidden
+}
+h1, h2, h3, h4, h5{
+	margin: 0;
+	padding: 0;
+}
+/* Блоки встанут вместе */
+.flex{
+	display: flex;
+}
+/* Убрать точки у списка */
+li{
+	list-style: none;
+}
+
+
+
+
+
+
+/* Задний фон у сайта */
+.wrap{
+	background: url('../img/background.jpg') no-repeat center;
+	background-size: cover;
+}
+
+
+
+
+/* Шапка сайта */
+.header{
+	padding: 30px 0;
+	/* Элементы встали по разные части экрана */
+	justify-content: space-between;
+}
+.logo{
+	/* Подключение шрифта у элемента */
+	font-family: CormorantInfant, Arial, sans-serif;
+	font-size: 22px;
+}
+.menu li{
+	font-family: Montserrat, Arial, sans-serif;
+	margin-left: 40px;
+	font-weight: bold;
+}
+
+
+
+/* Следущая секция */
+#title{
+	padding: 30px;
+}
+.title h1{
+	font-family: CormorantInfantLignt;
+	position: relative;
+	/* Для того чтобы элеменнты можно было наложить друг на дурга */
+	z-index: 2;
+	color: #756b62;
+	font-size: 65px;
+	margin-top: 50px;
+}
+.title img{
+	z-index: 0;
+	position: absolute;
+	height: 650px;
+	margin-top: -420px;
+	margin-left: 630px;
+}
+.img_back{
+	margin-top: 50px;
+	margin-left: 120px;
+}
+.stamp{
+	/* Можно размещать где угодно */
+	position: absolute;
+	margin-left: 1005px;
+	margin-top: -50px;
+}
+
+
+
+
+/* Следущая секция */
+#opis{
+	text-align: center;
+	margin-top: 100px;
+	padding: 100px;
+}
+.opisanie img{
+	position: absolute;
+	margin-top: -150px;
+	margin-left: 370px;
+}
+.opisanie h2{
+	font-family: CormorantInfantMediumItali;
+	font-style: italic;
+	font-size: 40px;
+	color: #988f87;
+}
+
+
+
+
+/* Следущая секция */
+#kol{
+	padding: 0 50px;
+}
+.palka{
+	margin-right: 20px;
+	height: 2px;
+	width: 70px;
+	background: #9f968e;
+}
+.title_kol h3{
+	margin-top: -10px;
+	/* Для того чтобы все буквы стали заглавными */
+	text-transform: uppercase;
+	color: #a89f96;
+}
+.title_kol{
+	margin-bottom: 40px;
+}
+.title_box{
+	margin-top: 20px;
+	color: #756b62;
+}
+.title_box p{
+	margin-top: 5px;
+}
+.plus{
+	margin-left: 130px;
+	text-align: center;
+	font-size: 28px;
+	height: 35px;
+	width: 35px;
+	/* Закругление */
+	border-radius: 50%;
+	border: 2px solid #a29991;
+}
+.plus a{
+	color: #9f968e;
+}
+.box h3{
+	width: 300px;
+	/* Ширина букв */
+	font-weight:normal;
+}
+.box p{
+	font-size: 18px;
+}
+.box_img_kol{
+	margin-right: 100px;
+}
+.arroy{
+	color: #a79e96;
+	font-size: 32px;
+	margin-top: 250px;
+}
+.pos_absol{
+	margin-top: 60px;
+	margin-left: 30px;
+}
+
+
+
+
+
+/* Следущая секция */
+#history{
+	padding: 100px 50px;
+	padding-top: 300px;
+}
+.create{
+	margin-top: 30px;
+}
+.create h2{
+	font-family: CormorantInfantMediumItali;
+	font-size: 30px;
+	color: #756b62;
+	font-style: italic;
+}
+.create p{
+	font-family: CormorantInfant-SemiBoldItalic;
+	color: #988f87;
+}
+.coment img{
+	margin-right: 30px;
+	width: 50px;
+	border-radius: 50%;
+}
+.coment h4{
+	border-bottom: 1px solid #8a7f76;
+	color: #756b62;
+}
+.coment p{
+	margin-top: 5px;
+	color: #988f87;
+}
+.pos{
+	position: absolute;
+	margin-top: -400px;
+	margin-left: 640px;
+}
+.pos2{
+	margin-top: 100px;
+	margin-left: 320px;
+}
+.pos3{
+	position: absolute;
+	margin-top: -490px;
+	margin-left: 1000px;
+}
+
+
+
+
+/* Следущая секция */
+.box_opis{
+	margin-left: 100px;
+}
+#otsup{
+	padding: 100px 0;
+}
+.box_opis img{
+	padding-left: 100px;
+}
+.box_opis p{
+	font-family: CormorantInfant-SemiBoldItalic;
+	color: #988f87;
+	font-style: italic;
+	font-size: 20px;
+}
+
+
+
+
+
+
+/* Следущая секция */
+#seat{
+	padding: 100px 0;
+}
+.img_nadpis{
+	margin-left: 400px;
+	z-index: 1;
+	position: relative;
+	padding-bottom: 50px;
+}
+.img_nadpis h2{
+	font-weight:normal;
+	margin-left: -350px;
+	text-align: center;
+	color: #f1e9de;
+	margin-top: -250px;
+}
+.pos4{
+	font-family: CormorantInfant-Medium;
+	z-index: 0;
+	position: absolute;
+	color: #bdb4ab;
+	font-size: 80px;
+	text-align: center;
+	margin-top: -430px;
+	font-weight: normal;
+	letter-spacing: 3px;
+}
+.bth_zakaz{
+	margin-top: 50px;
+	margin-left: 220px;
+	border-radius: 30px;
+	/* Прозрачный фон */
+	background: transparent;
+	border: 1px solid #e1d7ce;
+	color: #e5dbd1;
+	width: 200px;
+	height: 50px;
+	font-size: 22px;
+}
+
+
+
+
+/* Следущая секция */
+#colection{
+	padding: 300px 0;
+}
+.donload{
+	margin-left: 560px;
+}
+.donload img{
+	margin-right: 20px;
+}
+.donload p{
+	text-transform: uppercase;
+	color: #988f87;
+}
+.donload a{
+	text-transform: uppercase;
+	color: #756b62;
+}
+.colection{
+	margin-top: 30px;
+	width: 500px;
+}
+.colection img{
+	margin-left: 20px;
+}
+
+
+
+
+
+/* Следущая секция */
+#yxod{
+	background: url('../img/19.jpg') no-repeat center;
+	background-size: cover;
+	height: 400px;
+	padding:  20px 0px 100px 0px;
+}
+.title_yxod h2{
+	font-family: CormorantInfantMediumItali;
+	color: #756b62;
+	font-size: 40px;
+	font-style: italic;
+}
+.title_yxod p{
+	font-family: CormorantInfant-SemiBoldItalic;
+	width: 560px;
+	color: #aca39a;
+	font-size: 22px;
+	font-style: italic;
+}
+.title_yxod{
+	margin-right: 200px;
+}
+.yxod_box{
+	margin-left: 100px;
+}
+.bth_otp{
+	text-transform: uppercase;
+	margin-top: 50px;
+	margin-left: 600px;
+	border-radius: 30px;
+	background: transparent;
+	border: 1px solid #756b62;
+	color: #756b62;
+	width: 200px;
+	height: 50px;
+	font-size: 22px;
+}
+.otp_form{
+	width: 400px;
+}
+.otp_form p{
+	margin-top: -20px;
+	color: #9f968e;
+	position: absolute;	
+}
+
+.border{
+	border: 0;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #756b62;
+	width: 400px;
+	background: transparent;
+	margin-bottom: 20px;
+}
+/* Настройка подскаски на инпуте */
+::placeholder {
+	color: #9f968e;
+	font-size: 1.5em;
+}
+.color{
+	color: #756b62;
+	font-size: 18px;
+}
+.color input{
+	background: transparent;
+}
+.check{
+	margin-top: 20px;
+}
+.true{
+	font-size: 16px;
+	color: #756b62;
+	margin-left: 30px;
+}
+.bth_otp:hover{
+	cursor: pointer;
+}
+
+
+
+/* Подвал сайта */
+footer{
+	font-family: Montserrat, Arial, sans-serif;
+	background: url('../img/20.jpg') no-repeat center;
+	background-size: cover;
+	
+}
+.box_1 h3{
+	font-family: CormorantInfant, Arial, sans-serif;
+	font-weight:normal;
+	color: #f1e9de;
+	margin-bottom: 15px;
+}
+.box_1 h4{
+	margin-bottom: 40px;
+}
+.box_1{
+	color: #9f968e;
+}
+.box_1 p{
+	font-size: 13px;
+}
+.box_2{
+	margin-top: 35px;
+	margin-left:200px;
+	color: #9f968e;
+}
+.box_2 h3{
+	font-size: 15px;
+}
+.big_box{
+	padding-top: 10px;
+	padding-left: 100px;
+}
+.box_3{
+	margin-top: 35px;
+	margin-left: 200px;
+}
+.cru{
+	margin-left: 30px;
+	border-radius: 50%;
+	padding: 10px;
+	height: 20px;
+	border: 1px solid #9a928a;
+}
+.arroy a{
+	color: #988f87;
+	cursor: pointer;
+	text-decoration: none;
+}
+.header a{
+	color: #988f87;
+	cursor: pointer;
+	text-decoration: none;
+}
+@media(max-width:1212px) {
+	.container{
+		overflow:hidden
+	}
+	.title img {
+	  display:none;
+	}
+	.opisanie img{
+		display:none;
+	}
+	.colection {
+		display: block;
+	}
+	
+  }
+@media(max-width:744px) {
+	.stamp{
+		display: none;
+	}
+	.container{
+		overflow:hidden
+	}
+	.img_nadpis img{
+		display: none;
+	}
+	.pos4{
+		z-index: 1;
+		position: relative;
+		margin-top: 0px;
+	}
+	.otp_form p{
+		position: relative;
+	}
+	.pos{
+		display: none;
+	}
+	.pos3{
+		display: none;
+	}
+	.logo{
+		margin-left: 40px;
+	}
+	.header {
+		font-size: 10px;
+	}
+	.kolekt{
+		padding-top: 25px;
+	}
+	.box_opis {
+		text-align: center;
+		margin-left: 30px;
+	}
+	.box_opis img {
+		padding-left: 0px;
+	}
+	.colection img{
+		margin: 20px 0px 0px 50px;
+	}
+	.donload{
+		margin-left: 0px;
+	}
+	#colection{
+		padding: 100px 0px;
+	}
+}
